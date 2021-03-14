@@ -7,7 +7,7 @@ import redis.clients.jedis.Jedis;
 public class RedisContainer extends GenericContainer<RedisContainer> {
 
     public RedisContainer() {
-        this("redis:6.0.9");
+        this("redis:6.2.1");
     }
 
     public RedisContainer(String dockerImageName) {
