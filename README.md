@@ -2,6 +2,7 @@ Testcontainers test
 ===================
 
 ### run in docker
+
 ```
  docker run -it --rm -v $PWD:$PWD -w $PWD -v /var/run/docker.sock:/var/run/docker.sock maven:3 mvn test
 ```
@@ -16,4 +17,5 @@ Testcontainers test
 * Guide to @DynamicPropertySource in Spring: https://www.baeldung.com/spring-dynamicpropertysource
 * https://docs.spring.io/spring-framework/docs/5.2.5.RELEASE/spring-framework-reference/testing.html#testcontext-ctx-management-dynamic-property-sources
 * Adding Integration Tests in Spring Boot with Testcontainers: https://bootify.io/docs/spring-boot-integration-tests-with-testcontainers.html
+* testcontainers-auto-services-prototype: https://github.com/joshlong/testcontainers-auto-services-prototype
 
