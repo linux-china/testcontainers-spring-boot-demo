@@ -7,7 +7,7 @@ import redis.clients.jedis.Jedis;
 public class RedisContainer extends GenericContainer<RedisContainer> {
 
     public RedisContainer() {
-        this("redis:6.2.1");
+        this("redis:7.0.10");
     }
 
     public RedisContainer(String dockerImageName) {
@@ -16,6 +16,6 @@ public class RedisContainer extends GenericContainer<RedisContainer> {
     }
 
     public Jedis getJedis() {
-        return new Jedis(getContainerIpAddress(), getMappedPort(6379));
+        return new Jedis(getHost(), getMappedPort(6379));
     }
 }
