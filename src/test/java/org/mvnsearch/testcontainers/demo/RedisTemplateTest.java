@@ -11,7 +11,7 @@ import org.springframework.data.redis.core.RedisTemplate;
  * @author linux_china
  */
 @SpringBootTest
-public class RedisTemplateTest extends TestContainersBaseTest {
+public class RedisTemplateTest extends TestcontainersBaseTest {
 
     @Autowired
     private RedisTemplate<String, String> redisTemplate;

@@ -12,6 +12,6 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 @SpringBootTest
 @Import(TestContainersConfiguration.class)
 @Testcontainers
-public abstract class TestContainersBaseTest {
+public abstract class TestcontainersBaseTest {
 
 }
