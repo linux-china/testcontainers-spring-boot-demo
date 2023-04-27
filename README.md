@@ -10,7 +10,7 @@ Testcontainers test
 ### References
 
 * Testcontainers: https://www.testcontainers.org/
-* Playtika testcontainers-spring-boot: Container auto-configurations for spring-boot based integration tests
+* Playtika testcontainers-spring-boot: Container auto-configurations for spring-boot based integration tests: https://github.com/PlaytikaOSS/testcontainers-spring-boot
 * Spring Testing:  https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html
 * Local development with Testcontainers: https://bsideup.github.io/posts/local_development_with_testcontainers/
 * DB Integration Tests with Spring Boot and Testcontainers: https://www.baeldung.com/spring-boot-testcontainers-integration-test
