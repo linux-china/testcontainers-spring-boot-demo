@@ -17,6 +17,6 @@ public class TestContainersConfiguration {
     @Bean
     @ServiceConnection
     public MySQLContainer<?> mysqlContainer() {
-        return new MySQLContainer<>("mysql:8.0.23");
+        return new MySQLContainer<>("mysql:8.0.33");
     }
 }
