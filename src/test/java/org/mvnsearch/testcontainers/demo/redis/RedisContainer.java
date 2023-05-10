@@ -1,4 +1,4 @@
-package org.mvnsearch.testcontainers.demo;
+package org.mvnsearch.testcontainers.demo.redis;
 
 
 import org.testcontainers.containers.GenericContainer;

@@ -1,6 +1,7 @@
-package org.mvnsearch.testcontainers.demo;
+package org.mvnsearch.testcontainers.demo.redis;
 
 import org.junit.jupiter.api.Test;
+import org.mvnsearch.testcontainers.demo.TestcontainersBaseTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
