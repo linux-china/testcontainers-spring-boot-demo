@@ -1,0 +1,27 @@
+<!ELEMENT dataset (
+    flyway_schema_history*,
+    users*)>
+
+<!ELEMENT flyway_schema_history EMPTY>
+<!ATTLIST flyway_schema_history
+    installed_rank CDATA #REQUIRED
+    version CDATA #IMPLIED
+    description CDATA #REQUIRED
+    type CDATA #REQUIRED
+    script CDATA #REQUIRED
+    checksum CDATA #IMPLIED
+    installed_by CDATA #REQUIRED
+    installed_on CDATA #IMPLIED
+    execution_time CDATA #REQUIRED
+    success CDATA #REQUIRED
+>
+
+<!ELEMENT users EMPTY>
+<!ATTLIST users
+    id CDATA #REQUIRED
+    name CDATA #REQUIRED
+    email CDATA #REQUIRED
+    created_at CDATA #IMPLIED
+    updated_at CDATA #REQUIRED
+>
+
