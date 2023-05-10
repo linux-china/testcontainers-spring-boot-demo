@@ -1,6 +1,5 @@
 package org.mvnsearch.testcontainers.demo;
 
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
@@ -9,9 +8,8 @@ import org.testcontainers.junit.jupiter.Testcontainers;
  *
  * @author linux_china
  */
-@SpringBootTest
 @Import(TestContainersConfiguration.class)
 @Testcontainers
-public abstract class TestcontainersBaseTest {
+public abstract class TestcontainersBaseTest extends SpringBootBaseTest {
 
 }
