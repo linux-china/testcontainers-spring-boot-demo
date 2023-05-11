@@ -8,7 +8,26 @@ Spring Boot 3.1 with Testcontainers test
 * Flyway integration
 * Database rider integration
 
-### References
+# Reusable Containers
+
+* Opt-in to Reusable Containers in `~/.testcontainers.properties`, by adding `testcontainers.reuse.enable=true`
+* Add `.withReuse(true)` to the container configuration
+
+```java
+
+@TestConfiguration
+static class ContainerConfiguration {
+
+    @Bean
+    @ServiceConnection
+    RabbitMQContainer kafkaContainer() {
+        return new RabbitMQContainer("rabbitmq:3.11-alpine")
+                .withReuse(true);
+    }
+}
+```
+
+# References
 
 * Testcontainers: https://www.testcontainers.org/
 * Playtika testcontainers-spring-boot: Container auto-configurations for spring-boot based integration
@@ -26,4 +45,7 @@ Spring Boot 3.1 with Testcontainers test
   Boot: https://maciejwalkowiak.com/blog/testcontainers-spring-boot-setup/
 * Spring Boot 3.1.0 support for Testcontainers Service Connections and Local
   Development: https://www.youtube.com/watch?v=UuLD9gZmiZU
+*
+spring-boot-rabbitmq-testcontainers-reusable-mode: https://github.com/eddumelendez/spring-boot-rabbitmq-testcontainers-reusable-mode/tree/main
+* Reusable Containers (Experimental): https://www.testcontainers.org/features/reuse/
 
