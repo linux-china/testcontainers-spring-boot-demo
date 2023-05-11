@@ -27,6 +27,12 @@ static class ContainerConfiguration {
 }
 ```
 
+To stop and remove all containers started by Testcontainers:
+
+```shell
+$ docker ps --filter "label=org.testcontainers=true" -aq | xargs docker stop | xargs docker rm
+```
+
 # References
 
 * Testcontainers: https://www.testcontainers.org/
@@ -46,6 +52,17 @@ static class ContainerConfiguration {
 * Spring Boot 3.1.0 support for Testcontainers Service Connections and Local
   Development: https://www.youtube.com/watch?v=UuLD9gZmiZU
 *
+
 spring-boot-rabbitmq-testcontainers-reusable-mode: https://github.com/eddumelendez/spring-boot-rabbitmq-testcontainers-reusable-mode/tree/main
+
 * Reusable Containers (Experimental): https://www.testcontainers.org/features/reuse/
 
+"Labels": {
+"org.testcontainers": "true",
+"org.testcontainers.copied_files.hash": "1",
+"org.testcontainers.hash": "9ab8dcb019efaff9ed45d9d3ac6db96ae8a18e53",
+"org.testcontainers.lang": "java",
+"org.testcontainers.version": "1.18.0"
+}
+
+docker ps --filter "label=org.testcontainers=true"
