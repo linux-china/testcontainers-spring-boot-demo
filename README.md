@@ -54,4 +54,5 @@ $ docker ps --filter "label=org.testcontainers=true" -aq | xargs docker stop | x
   Development: https://www.youtube.com/watch?v=UuLD9gZmiZU
 * spring-boot-rabbitmq-testcontainers-reusable-mode: https://github.com/eddumelendez/spring-boot-rabbitmq-testcontainers-reusable-mode/tree/main
 * Reusable Containers (Experimental): https://www.testcontainers.org/features/reuse/
+* testcontainers-samples: https://github.com/eddumelendez/testcontainers-samples
 
