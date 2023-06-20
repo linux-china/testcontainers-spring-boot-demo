@@ -55,4 +55,5 @@ $ docker ps --filter "label=org.testcontainers=true" -aq | xargs docker stop | x
 * spring-boot-rabbitmq-testcontainers-reusable-mode: https://github.com/eddumelendez/spring-boot-rabbitmq-testcontainers-reusable-mode/tree/main
 * Reusable Containers (Experimental): https://www.testcontainers.org/features/reuse/
 * testcontainers-samples: https://github.com/eddumelendez/testcontainers-samples
+* Spring Boot 3.1's ConnectionDetails abstraction: https://spring.io/blog/2023/06/19/spring-boot-31-connectiondetails-abstraction
 
