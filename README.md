@@ -1,4 +1,4 @@
-Spring Boot 3.1 with Testcontainers test
+Spring Boot 3.2 with Testcontainers test
 ========================================
 
 # Features
@@ -37,6 +37,7 @@ $ docker ps --filter "label=org.testcontainers=true" -aq | xargs docker stop | x
 # References
 
 * Testcontainers: https://www.testcontainers.org/
+* Spring Boot Testcontainers test: https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.testing.testcontainers
 * Playtika testcontainers-spring-boot: Container auto-configurations for spring-boot based integration
   tests: https://github.com/PlaytikaOSS/testcontainers-spring-boot
 * Spring Testing:  https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html
