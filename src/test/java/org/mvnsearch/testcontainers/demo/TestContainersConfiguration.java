@@ -12,6 +12,7 @@ import org.testcontainers.containers.MySQLContainer;
 @TestConfiguration(proxyBeanMethods = false)
 public class TestContainersConfiguration {
 
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Bean()
     public GenericContainer<?> mailHog(DynamicPropertyRegistry properties) {
         GenericContainer<?> mailHog = new GenericContainer<>("mailhog/mailhog:latest").withExposedPorts(1025, 8025);
