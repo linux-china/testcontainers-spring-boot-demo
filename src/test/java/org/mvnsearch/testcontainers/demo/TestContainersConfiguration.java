@@ -14,11 +14,11 @@ public class TestContainersConfiguration {
 
     @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Bean()
-    public GenericContainer<?> mailHog(DynamicPropertyRegistry properties) {
-        GenericContainer<?> mailHog = new GenericContainer<>("mailhog/mailhog:latest").withExposedPorts(1025, 8025);
-        properties.add("spring.mail.host", mailHog::getHost);
-        properties.add("spring.mail.port", () -> mailHog.getMappedPort(1025).toString());
-        return mailHog;
+    public GenericContainer<?> mailpit(DynamicPropertyRegistry properties) {
+        GenericContainer<?> mailpit = new GenericContainer<>("axllent/mailpit:v1.19").withExposedPorts(1025, 8025);
+        properties.add("spring.mail.host", mailpit::getHost);
+        properties.add("spring.mail.port", () -> mailpit.getMappedPort(1025).toString());
+        return mailpit;
     }
 
     @Bean
