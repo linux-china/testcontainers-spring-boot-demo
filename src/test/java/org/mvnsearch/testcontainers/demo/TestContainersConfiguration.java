@@ -15,7 +15,7 @@ public class TestContainersConfiguration {
     @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Bean()
     public GenericContainer<?> mailpit(DynamicPropertyRegistry properties) {
-        GenericContainer<?> mailpit = new GenericContainer<>("axllent/mailpit:v1.19").withExposedPorts(1025, 8025);
+        GenericContainer<?> mailpit = new GenericContainer<>("axllent/mailpit:v1.20.4").withExposedPorts(1025, 8025);
         properties.add("spring.mail.host", mailpit::getHost);
         properties.add("spring.mail.port", () -> mailpit.getMappedPort(1025).toString());
         return mailpit;
