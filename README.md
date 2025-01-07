@@ -60,4 +60,5 @@ $ docker ps --filter "label=org.testcontainers=true" -aq | xargs docker stop | x
 * Spring Boot 3.1's ConnectionDetails abstraction: https://spring.io/blog/2023/06/19/spring-boot-31-connectiondetails-abstraction
 * Stateful Testcontainers for Spring Boot 3.1 Dev Mode: https://learnings.aleixmorgadas.dev/p/stateful-testcontainers-for-spring
 * Spring Tips: Testcontainers, Docker Compose, and Service Connections https://www.youtube.com/watch?v=msb2b3BeeQo
+* Spring Boot + Testcontainers Tests at Jet Speed: https://www.sivalabs.in/run-spring-boot-testcontainers-tests-at-jet-speed/
 
