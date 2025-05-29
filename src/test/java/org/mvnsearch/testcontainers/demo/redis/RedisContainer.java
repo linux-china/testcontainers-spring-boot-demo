@@ -7,7 +7,7 @@ import redis.clients.jedis.Jedis;
 public class RedisContainer extends GenericContainer<RedisContainer> {
 
     public RedisContainer() {
-        this("redis:7.0.10");
+        this("8.0.1-alpine3.21");
     }
 
     public RedisContainer(String dockerImageName) {
