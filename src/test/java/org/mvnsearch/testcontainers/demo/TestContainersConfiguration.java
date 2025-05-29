@@ -39,7 +39,7 @@ public class TestContainersConfiguration {
 
     @Bean
     @ServiceConnection
-    public PostgreSQLContainer<?> mysqlContainer() {
+    public PostgreSQLContainer<?> postgresqlContainer() {
         return new PostgreSQLContainer<>("postgres:17.5");
     }
 }
