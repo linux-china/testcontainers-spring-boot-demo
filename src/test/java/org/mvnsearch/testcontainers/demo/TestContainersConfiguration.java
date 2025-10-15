@@ -6,8 +6,8 @@ import org.springframework.boot.testcontainers.service.connection.ServiceConnect
 import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.DynamicPropertyRegistrar;
 import org.testcontainers.containers.GenericContainer;
-import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
+import org.testcontainers.postgresql.PostgreSQLContainer;
 
 @SuppressWarnings("resource")
 @TestConfiguration(proxyBeanMethods = false)
@@ -39,7 +39,7 @@ public class TestContainersConfiguration {
 
     @Bean
     @ServiceConnection
-    public PostgreSQLContainer<?> postgresqlContainer() {
-        return new PostgreSQLContainer<>("postgres:18.0");
+    public PostgreSQLContainer postgresqlContainer() {
+        return new PostgreSQLContainer("postgres:18.0");
     }
 }
