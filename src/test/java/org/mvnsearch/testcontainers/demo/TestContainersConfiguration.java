@@ -14,9 +14,9 @@ import org.testcontainers.junit.jupiter.Container;
 public class TestContainersConfiguration {
 
     @Container
-    static GenericContainer<?> mailpit = new GenericContainer<>("axllent/mailpit:v1.25.1").withExposedPorts(1025, 8025);
+    static GenericContainer<?> mailpit = new GenericContainer<>("axllent/mailpit:v1.27.10").withExposedPorts(1025, 8025);
     @Container
-    static GenericContainer<?> natsServer = new GenericContainer<>("nats:2.11.4-alpine3.21").withExposedPorts(4222);
+    static GenericContainer<?> natsServer = new GenericContainer<>("nats:2.12.1-alpine3.22").withExposedPorts(4222);
 
     @Bean
     public DynamicPropertyRegistrar dynamicPropertyRegistrar() {
@@ -40,6 +40,6 @@ public class TestContainersConfiguration {
     @Bean
     @ServiceConnection
     public PostgreSQLContainer<?> postgresqlContainer() {
-        return new PostgreSQLContainer<>("postgres:17.5");
+        return new PostgreSQLContainer<>("postgres:18.0");
     }
 }
