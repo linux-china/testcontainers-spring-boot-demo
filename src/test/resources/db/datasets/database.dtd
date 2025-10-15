@@ -18,7 +18,7 @@
 
 <!ELEMENT users EMPTY>
 <!ATTLIST users
-    id CDATA #REQUIRED
+    id CDATA #IMPLIED
     name CDATA #REQUIRED
     email CDATA #REQUIRED
     created_at CDATA #IMPLIED
